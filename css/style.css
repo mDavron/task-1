@@ -91,7 +91,8 @@ body {
 
 /* HERO CONTENT  STYLES START HERE  */
 .hero-content_block {
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
+  background-color: var(--bg-lightGray);
   height: 100%;
 }
 .hero-content_block .hero-short_text {
@@ -114,6 +115,7 @@ body {
   font-size: var(--heading-sz);
   color: var(--text-dark);
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 .hero-content_text {
   font-size: var(--text-sz-normal);
