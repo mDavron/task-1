@@ -332,7 +332,6 @@ body {
 }
 .benefits_details .details {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 3rem;
 }
@@ -485,5 +484,15 @@ body {
   }
   .benefits_footer-container {
     padding: 20px;
+  }
+  .details_card {
+    padding: 20px;
+  }
+  .benefits_details .details {
+    gap: 2rem;
+  }
+  .details_list-item {
+    line-height: 1.3rem;
+    font-size: 16px;
   }
 }
