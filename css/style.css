@@ -27,6 +27,12 @@ body {
   min-height: 100vh;
   background-color: var(--bg-lightGray);
 }
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -128,10 +134,52 @@ body {
 /* HERO CONTENT  STYLES ENDS HERE  */
 
 /* HERO INFO COMPANY SHORTS START HERE */
-.hero-info_company_shorts {
+.hero-info_about {
   height: 100%;
   border-right: 8px solid red;
   background-color: var(--bg-DarkBlue);
+  padding: 3rem;
+}
+.about_info {
+  margin-bottom: 5rem;
+}
+.about_info-item {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--bg-lightGray);
+}
+.about_menu {
+  margin-top: 1.5rem;
+}
+.about_title {
+  font-size: var(--subHeading-sz);
+  color: var(--bg-white);
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+.about_text {
+  font-size: var(--text-sz-normal);
+  color: var(--text-white);
+  padding: 5px 0;
+}
+.about_text span {
+  margin-right: 1rem;
+  font-weight: 600;
+}
+.circle {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.circle::after {
+  position: absolute;
+  content: "";
+  background-color: var(--text-white);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: 2px;
+  top: 100%;
+  transform: translateY(50%);
 }
 /* HERO INFO COMPANY SHORTS ENDS */
 /* ==================================================== */
@@ -257,7 +305,7 @@ body {
 .sevices_text {
   font-size: var(--text-sz-normal);
   line-height: 24px;
-  color: var(--text-darkGray);
+  color: var(--text-dark);
 }
 .sevices_list {
   list-style: none;
@@ -267,7 +315,7 @@ body {
 .sevices_list-item {
   font-size: var(--text-sz-normal);
   line-height: 1.2rem;
-  color: var(--bg-DarkBlue);
+  color: var(--text-dark);
   padding: 5px 0;
 }
 .sevices_list-item span {
@@ -288,8 +336,6 @@ body {
 /* RIGHT SECTION START */
 .second-page_right {
   flex-basis: 50%;
-  /* border-bottom: 20px solid var(--bg-violet); */
-  /* background: #1c2eb8; */
 }
 .benefits {
   background-color: var(--bg-lightGray);
@@ -457,7 +503,7 @@ body {
     flex-basis: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 540px) {
   .card h2 {
     font-size: 1rem;
   }
