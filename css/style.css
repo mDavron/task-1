@@ -6,7 +6,6 @@
   --bg-dark: #000;
   --bg-red: #c9183f;
   --bg-violet: #d1c2c7;
-  /*coral nomni uzgartirish kerak */
   --text-white: #fff;
   --text-gray: #a9a6a9;
   --text-lightGray: #9799a7;
@@ -23,6 +22,9 @@
   box-sizing: border-box;
   font-family: "Tahoma", sans-serif;
 }
+img {
+  display: block;
+}
 body {
   min-height: 100vh;
   background-color: var(--bg-lightGray);
@@ -37,9 +39,6 @@ a {
   max-width: 1920px;
   margin: 0 auto;
   padding-bottom: 50px;
-}
-.left-container {
-  margin-left: 80px;
 }
 /* GRID STYLES START HERE */
 .hero.grid {
@@ -390,6 +389,9 @@ a {
   font-size: var(--subHeading-sz);
   background-color: var(--bg-red);
 }
+.details_card-middle {
+  background-color: var(--bg-dark);
+}
 .details_list {
   list-style: none;
 }
@@ -443,10 +445,13 @@ a {
 }
 /* SECOND PAGE STYLES ENDS */
 @media (max-width: 960px) {
-  .left-container {
-    margin-left: 0;
+  .hero-content_block {
+    display: flex;
+    flex-direction: column-reverse;
   }
-
+  .hero-content {
+    padding-inline: 0px;
+  }
   .hero-content_block .hero-short_text {
     margin: 0;
     width: 100%;
@@ -463,11 +468,11 @@ a {
   }
   .grid-3 {
     grid-column: 1/7;
-    grid-row: 6/10;
+    grid-row: 10/15;
   }
   .grid-4 {
     grid-column: 1/7;
-    grid-row: 10/15;
+    grid-row: 6/10;
   }
   /* RESULTS */
   .results {
@@ -491,7 +496,11 @@ a {
     width: 120px;
   }
   .results .left {
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
+    padding-inline: 0px;
+  }
+  .results .center {
+    order: 3;
   }
   .second-page {
     flex-direction: column;
