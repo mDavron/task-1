@@ -214,7 +214,7 @@
   position: absolute;
   content: "";
   width: 2px;
-  height: 65%;
+  height: 95%;
   transform: translateY(-50%);
   background-color: var(--text-gray);
   right: 0;
@@ -269,7 +269,6 @@
 .results .right {
   flex-grow: 1;
   flex-basis: 33%;
-  background-color: #1c2eb8;
 }
 .results .right > img {
   object-fit: cover;
@@ -458,6 +457,16 @@
   margin-right: 15px;
 }
 /* SECOND PAGE STYLES ENDS */
+@media (max-width: 1250px) and (min-width: 998px) {
+  .cst-container {
+    width: 95%;
+  }
+  .cst-solution {
+    gap: 40px;
+  }
+  .results .right {
+  }
+}
 @media (max-width: 960px) {
   .cst-hero-content_block {
     display: flex;
@@ -508,6 +517,7 @@
   .center {
     flex-basis: 100%;
     gap: 30px;
+    flex-shrink: 0;
   }
   .right {
     flex-basis: 100%;
