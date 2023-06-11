@@ -15,56 +15,51 @@
   --heading-sz: 2.2rem;
   --subHeading-sz: 1.5rem;
 }
-article {
-  color: dar;
-}
-* {
+
+.cst-body,
+.cst-body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Tahoma", sans-serif; */
   font-family: Tahoma, sans-serif;
 }
-img {
+.cst-body img {
   display: block;
 }
-body {
+.cst-body {
   min-height: 100vh;
   background-color: var(--bg-lightGray);
   font-size: 18px;
 }
-ul {
+.cst-body ul {
   list-style: none;
 }
-a {
+.cst-body a {
   text-decoration: none;
 }
-.wrapper {
-  max-width: 1920px;
-  margin: 0 auto;
-}
+
 /* GRID STYLES START HERE */
-.hero.grid {
+.cst-hero-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: minmax(100px, auto);
 }
-.grid-1 {
+.cst-hero-grid-item-1 {
   grid-column: 1/3;
   grid-row: 1 / 2;
   /* background: #c9183f; */
 }
-.grid-2 {
+.cst-hero-grid-item-2 {
   grid-column: 3/7;
   grid-row: 1 / 6;
   background: #304735;
 }
-.grid-3 {
+.cst-hero-grid-item-3 {
   grid-column: 4/7;
   grid-row: 6 / 9;
   background: #363047;
 }
-.grid-4 {
+.cst-hero-grid-item-4 {
   grid-column: 1 /4;
   grid-row: 2 / 9;
   background: #47303e;
@@ -85,27 +80,27 @@ a {
 }
 /* HEADER STYLES ENDS HERE */
 
-/* HERO BANNER IMAGE STYLES START HERE */
-.hero-banner {
+/* cst-hero BANNER IMAGE STYLES START HERE */
+.cst-hero-banner {
   height: 100%;
   width: 100%;
   position: relative;
 }
-.hero-banner img {
+.cst-hero-banner img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   background-repeat: no-repeat;
 }
-/* HERO BANNER IMAGE STYLES ENDS HERE */
+/* cst-hero BANNER IMAGE STYLES ENDS HERE */
 
-/* HERO CONTENT  STYLES START HERE  */
-.hero-content_block {
+/* cst-hero CONTENT  STYLES START HERE  */
+.cst-hero-content_block {
   background-color: var(--bg-lightGray);
   height: 100%;
 }
-.hero-content_block .hero-short_text {
+.cst-hero-content_block .cst-hero-short_text {
   width: 90%;
   margin-left: auto;
   padding: 2.5rem;
@@ -113,29 +108,29 @@ a {
   margin-bottom: -50px;
   background-color: var(--bg-red);
 }
-.hero-content_block .hero-short_text p {
+.cst-hero-content_block .cst-hero-short_text p {
   color: var(--text-white);
   font-size: var(--text-sz-normal);
   line-height: 24px;
 }
-.hero-content {
+.cst-hero-content {
   padding: 2rem;
 }
-.hero-content_title {
+.cst-hero-content_title {
   font-size: var(--heading-sz);
   color: var(--text-dark);
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
-.hero-content_text {
+.cst-hero-content_text {
   font-size: var(--text-sz-normal);
   color: var(--text-DarkBlue);
   margin-bottom: 1.2rem;
 }
-/* HERO CONTENT  STYLES ENDS HERE  */
+/* cst-hero CONTENT  STYLES ENDS HERE  */
 
-/* HERO INFO COMPANY SHORTS START HERE */
-.hero-info_about {
+/* cst-hero INFO COMPANY SHORTS START HERE */
+.cst-hero-info {
   height: 100%;
   border-right: 8px solid red;
   background-color: var(--bg-DarkBlue);
@@ -183,7 +178,7 @@ a {
   top: 100%;
   transform: translateY(50%);
 }
-/* HERO INFO COMPANY SHORTS ENDS */
+/* cst-hero INFO COMPANY SHORTS ENDS */
 /* ==================================================== */
 /* RESULTS SECTION STYLES START */
 /* RESULTS SECTION STYLES START */
@@ -285,65 +280,66 @@ a {
 /* RESULTS SECTION STYLES ENDS */
 
 /* SECOND PAGE STYLES START */
-.container {
-  width: 90%;
+.cst-container {
+  max-width: 1920px;
   margin: 0 auto;
+  width: 90%;
 }
-.second-page {
+.cst-solution {
   display: flex;
   gap: 70px;
   min-height: 100vh;
   padding-top: 3.2rem;
 }
-.second-page_left {
+.cst-solution-left {
   flex-basis: 50%;
 }
-.second-page_left img {
+.cst-solution-left img {
   width: 100%;
   height: 530px;
   object-fit: cover;
 }
-.services {
+.cst-services {
   background-color: var(--bg-violet);
   color: var(--bg-white);
   border-right: 8px solid var(--bg-red);
   margin-top: 3rem;
 }
-.sevices_content {
+.cst-sevices-content {
   padding: 3rem;
 }
-.sevices_title {
+.cst-sevices-title {
   text-transform: uppercase;
   color: var(--bg-DarkBlue);
   font-size: var(--subHeading-sz);
   letter-spacing: 1.2px;
   margin-bottom: 1rem;
 }
-.sevices_text {
+.cst-sevices-text {
   font-size: var(--text-sz-normal);
   line-height: 1.5rem;
   color: var(--text-dark);
 }
-.sevices_list {
+.cst-sevices-list {
   list-style: none;
   margin-top: 1.2rem;
   margin-bottom: 3.5rem;
 }
-.sevices_list-item {
+.cst-sevices-list-item {
   font-size: var(--text-sz-normal);
   line-height: 1.2rem;
   color: var(--text-dark);
   padding: 5px 0;
 }
-.sevices_list-item span {
+.cst-sevices-list-item span {
   margin-right: 0.8rem;
   font-weight: 600;
 }
-.sevices_footer {
+.cst-sevices-footer {
   background-color: var(--bg-DarkBlue);
   padding: 3rem;
 }
-.sevices_footer-text {
+.cst-sevices-footer-text {
   font-size: var(--text-sz-normal);
   color: var(--text-lightGray);
   line-height: 1.8rem;
@@ -352,13 +348,11 @@ a {
 /* LEFT SECTION ENDS */
 
 /* RIGHT SECTION START */
-.second-page_right {
+.cst-solution-right {
   flex-basis: 50%;
 }
-.benefits {
-  background-color: var(--bg-lightGray);
-}
-.benefits_title {
+
+.cst-solution-benifits_title {
   font-size: var(--subHeading-sz);
   color: var(--text-dark);
   letter-spacing: 1.2px;
@@ -366,11 +360,11 @@ a {
   margin-bottom: 1.5rem;
   font-weight: 800;
 }
-.title_before {
+.cst-title-dot {
   position: relative;
   margin-bottom: 2rem;
 }
-.title_before::after {
+.cst-title-dot::after {
   position: absolute;
   content: "";
   background-color: var(--text-dark);
@@ -381,20 +375,20 @@ a {
   top: 100%;
   transform: translateY(50%);
 }
-.benefits_text {
+.cst-solution-benifits_text {
   font-size: var(--text-sz-normal);
   color: var(--text-DarkBlue);
   line-height: 1.5rem;
 }
 /* RIGHT SECTION ENDS */
-.benefits_details {
+.cst-solution-benifits_details {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 3rem;
 }
-.benefits_details .details {
+.cst-solution-benifits_details .details {
   display: flex;
   align-items: center;
   gap: 3rem;
@@ -423,28 +417,28 @@ a {
   color: #c9183f;
   font-weight: 700;
 }
-.benefits_img {
+.cst-solution-benifits-img {
   width: 100%;
   height: 450px;
   object-fit: cover;
 }
-.benefits_footer {
+.cst-solution-contact {
   margin-top: 2rem;
   border-bottom: 2.5rem solid #eabcac;
   padding-bottom: 2rem;
 }
-.benefits_footer-logo {
+.cst-solution-contact-logo {
   width: 150px;
   height: 50px;
   object-fit: cover;
   margin-bottom: 1.5rem;
 }
-.benefits_footer-text {
+.cst-solution-contact-text {
   color: var(--text-dark);
   font-size: var(--text-sz-normal);
   line-height: 1.5rem;
 }
-.benefits_footer hr {
+.cst-solution-contact hr {
   height: 0;
   width: 100%;
   border: 1px solid var(--text-lightGray);
@@ -465,14 +459,14 @@ a {
 }
 /* SECOND PAGE STYLES ENDS */
 @media (max-width: 960px) {
-  .hero-content_block {
+  .cst-hero-content_block {
     display: flex;
     flex-direction: column-reverse;
   }
-  .hero-content {
+  .cst-hero-content {
     padding-inline: 0px;
   }
-  .hero-content_block .hero-short_text {
+  .cst-hero-content_block .cst-hero-short_text {
     margin: 0;
     width: 100%;
     transform: translateY(0);
@@ -526,13 +520,13 @@ a {
   .results .center {
     order: 3;
   }
-  .second-page {
+  .cst-solution {
     flex-direction: column;
   }
-  .second-page_left {
+  .cst-solution-left {
     flex-basis: 100%;
   }
-  .second-page_right {
+  .cst-solution-right {
     flex-basis: 100%;
   }
 }
@@ -540,16 +534,16 @@ a {
   .card h2 {
     font-size: 1rem;
   }
-  .container {
+  .cst-container {
     width: 100%;
   }
-  .hero-content {
+  .cst-hero-content {
     padding: 50px 20px;
   }
-  .hero-content_title {
+  .cst-hero-content_title {
     font-size: var(--subHeading-sz);
   }
-  .hero-info_about {
+  .cst-hero-info {
     height: 100%;
     border-right: 5px solid red;
     background-color: var(--bg-DarkBlue);
@@ -574,27 +568,27 @@ a {
     padding-bottom: 0;
   }
 
-  .services {
+  .cst-services {
     border-right: 5px solid var(--bg-red);
   }
-  .sevices_content {
+  .cst-sevices-content {
     padding: 20px;
     padding-top: 40px;
   }
-  .sevices_footer {
+  .cst-sevices-footer {
     padding: 20px;
   }
-  .benefits_container {
+  .cst-solution-benifits {
     padding: 20px;
   }
-  .benefits_footer-container {
+  .cst-solution-contact-cst-container {
     padding: 20px;
   }
 
   .details_card {
     padding: 30px;
   }
-  .benefits_details .details {
+  .cst-solution-benifits_details .details {
     gap: 2rem;
   }
 
@@ -602,7 +596,7 @@ a {
     line-height: 1.3rem;
     font-size: 16px;
   }
-  .second-page {
+  .cst-solution {
     gap: 30px;
     padding-top: 3.2rem;
   }
